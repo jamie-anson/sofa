@@ -5,6 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sofa – A Comfy Introduction to Using AI</title>
   <link rel="icon" type="image/png" href="favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- MailerLite Universal -->
+<script>
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '1277622');
+</script>
+<!-- End MailerLite Universal -->
+
   <style>
     @font-face {
             font-family: 'Gooper Trial Light';
@@ -14,7 +26,7 @@
         }
 
     body {
-      font-family: 'Gooper Trial Light', sans-serif;
+    font-family: 'Rubik', Arial, sans-serif; /* Apply Rubik font to body */
       background-color: #F7F2E8;
       color: #333;
       margin: 0;
@@ -40,7 +52,7 @@
     }
     .hero-title {
         font-family: 'Gooper Trial Light', sans-serif;
-      font-size: 2rem;
+      font-size: 1.6rem;
       margin: 1rem 0;
     }
     .subtitle {
@@ -77,6 +89,11 @@
     .email-form button:hover {
   background-color: #24563A; /* Slightly darker green */
     }
+    .ml-embedded { 
+        text-align: left; 
+        margin-left: 0; 
+        width: 100%; 
+    }
    
     .bullet-points {
       list-style-type: none;
@@ -105,6 +122,7 @@
       max-width: 100%;
       height: auto;
     }
+    .image-label { color: #cccccc; font-size: 0.9em; margin-top: 10px; }
     @media (max-width: 768px) {
       .main-content {
         flex-direction: column;
@@ -134,13 +152,21 @@
   transition: all 0.2s ease-in-out;
 }
 .logo-container img {
-  margin-top: 100px;  /* <-- Add 100px space above the image */
+  margin-top: 100px;  
   height: 50px;
   margin-bottom: 0.5rem;
 }
 .logo-container {
-  padding-top: 100px; /* <-- 100px space at the top of this container */
+  padding-top: 100px; 
   margin-bottom: 1rem;
+}
+
+  /* FOOTER STYLES */
+footer {
+  text-align: center;
+  padding: 1rem;
+  color: rgba(0, 0, 0, 0.5); /* 50% black */
+  font-size: 0.9rem;  /* or 1rem, whatever size you prefer */
 }
   </style>
 </head>
@@ -148,7 +174,6 @@
 
   <div class="main-content">
     
-    <!-- CHANGED: Put the logo and heading into the same container so the heading is below the logo -->
     <div class="text-section">
       <div class="logo-container">
         <img src="4xLogoSofa.png" alt="Sofa Logo">
@@ -159,11 +184,13 @@
         10 part email course guiding you to use AI to help you make meaningful changes 
         in your work and personal life.
       </p>
-
+<!--
       <form class="email-form">
         <input type="email" placeholder="Enter your email">
         <button type="submit">Join the Course</button>
       </form>
+      -->
+      <div class="ml-embedded" data-form="dAnNd0"></div>
 
       <ul class="bullet-points">
         <li>Team up with an AI sidekick that always has your back.</li>
@@ -174,9 +201,15 @@
 
     <div class="image-section">
       <img src="Tree-image.png" alt="Tree Image" class="rounded-image">
+      <p class="image-label">Photo by Google DeepMind</p>
+
     </div>
 
   </div>
+  <!-- FOOTER -->
+  <footer>
+    © Jamie Anson 2025
+  </footer>
 
 </body>
 </html>
