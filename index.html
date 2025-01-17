@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sofa – A Comfy Introduction to Using AI</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <style>
+    @font-face {
+            font-family: 'Gooper Trial Light';
+            src: url('Gooper7-Light-Trial.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+    body {
+      font-family: 'Gooper Trial Light', sans-serif;
+      background-color: #F7F2E8;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .main-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .logo-container {
+      margin-bottom: 1rem;
+    }
+    .logo-container img {
+      /* You could also center the image by adding: display: block; margin: 0 auto; */
+      height: 50px;
+      margin-bottom: 0.5rem; /* stack the heading below the logo */
+    }
+    .hero-title {
+        font-family: 'Gooper Trial Light', sans-serif;
+      font-size: 2rem;
+      margin: 1rem 0;
+    }
+    .subtitle {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+      max-width: 500px;
+    }
+    .text-section {
+      flex: 1 1 400px;
+      margin-right: 1rem;
+    }
+    .email-form {
+      display: flex;
+      max-width: 400px;
+      margin-bottom: 2rem;
+    }
+    .email-form input {
+      flex: 1;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-right: none;
+      border-radius: 4px 0 0 4px;
+      font-size: 1rem;
+    }
+    .email-form button {
+      background-color: #2C6E49;
+      color: #fff;
+      border: none;
+      padding: 0.75rem 1.25rem;
+      border-radius: 0 4px 4px 0;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .email-form button:hover {
+  background-color: #24563A; /* Slightly darker green */
+    }
+   
+    .bullet-points {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      max-width: 500px;
+    }
+    .bullet-points li {
+      margin-bottom: 0.75rem;
+      position: relative;
+      padding-left: 1.5rem;
+      line-height: 1.4;
+    }
+    .bullet-points li::before {
+      content: "✔";
+      color: #2C6E49;
+      position: absolute;
+      left: 0;
+    }
+    .image-section {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .rounded-image {
+      border-radius: 20px;
+      max-width: 100%;
+      height: auto;
+    }
+    @media (max-width: 768px) {
+      .main-content {
+        flex-direction: column;
+        align-items: center;
+      }
+      .text-section {
+        margin-right: 0;
+        margin-bottom: 2rem;
+      }
+      .hero-title {
+        font-size: 1.8rem;
+      }
+      .email-form {
+        flex-direction: column;
+      }
+      .email-form input {
+        border-radius: 4px;
+        border-right: 1px solid #ccc;
+        margin-bottom: 0.5rem;
+      }
+      .email-form button {
+        border-radius: 4px;
+      }
+    }
+    .email-form button,
+.email-form input {
+  transition: all 0.2s ease-in-out;
+}
+.logo-container img {
+  margin-top: 100px;  /* <-- Add 100px space above the image */
+  height: 50px;
+  margin-bottom: 0.5rem;
+}
+.logo-container {
+  padding-top: 100px; /* <-- 100px space at the top of this container */
+  margin-bottom: 1rem;
+}
+  </style>
+</head>
+<body>
+
+  <div class="main-content">
+    
+    <!-- CHANGED: Put the logo and heading into the same container so the heading is below the logo -->
+    <div class="text-section">
+      <div class="logo-container">
+        <img src="4xLogoSofa.png" alt="Sofa Logo">
+        <h2 class="hero-title">A comfy introduction to using AI</h2>
+      </div>
+
+      <p class="subtitle">
+        10 part email course guiding you to use AI to help you make meaningful changes 
+        in your work and personal life.
+      </p>
+
+      <form class="email-form">
+        <input type="email" placeholder="Enter your email">
+        <button type="submit">Join the Course</button>
+      </form>
+
+      <ul class="bullet-points">
+        <li>Team up with an AI sidekick that always has your back.</li>
+        <li>Slash through your email mountain and make decisions in record time.</li>
+        <li>Dazzle yourself with brilliant ideas you never knew you had.</li>
+      </ul>
+    </div>
+
+    <div class="image-section">
+      <img src="Tree-image.png" alt="Tree Image" class="rounded-image">
+    </div>
+
+  </div>
+
+</body>
+</html>
